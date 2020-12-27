@@ -1,0 +1,5 @@
+Today's task:
+
+Create a js prototype function to mask currency with ,(comma) as delimeter. 
+Example - if the input is 1000 
+Output - 1,000
