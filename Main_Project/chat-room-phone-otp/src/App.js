@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import firebase from "./firebase";
 
-export default class PhoneLogin extends Component {
+export default class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -59,9 +59,9 @@ export default class PhoneLogin extends Component {
   onSubmitOtp = (e) => {
     e.preventDefault();
     let otpInput = this.state.otp;
-    let optConfirm = window.confirmationResult;
+    let otpConfirm = window.confirmationResult;
     // console.log(codee);
-    optConfirm
+    otpConfirm
       .confirm(otpInput)
       .then(function (result) {
         // User signed in successfully.
